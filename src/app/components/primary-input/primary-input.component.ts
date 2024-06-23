@@ -31,18 +31,14 @@ export class PrimaryInputComponent implements ControlValueAccessor {
     const value = (event.target as HTMLInputElement).value
     this.onChange(value)
   }
-
   writeValue(value: any): void {
     this.value = value;
   }
-
   registerOnChange(fn: any): void {
     this.onChange = fn;
   }
-
   registerOnTouched(fn: any): void {
     this.onTouched = fn;
   }
-
   setDisabledState(isDisabled: boolean): void {}
 }
