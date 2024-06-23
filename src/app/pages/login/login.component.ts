@@ -16,7 +16,6 @@ import { PrimaryInputComponent } from '../../components/primary-input/primary-in
 })
 export class LoginComponent {
   loginForm!: FormGroup;
-  
   constructor() {
     this.loginForm = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
