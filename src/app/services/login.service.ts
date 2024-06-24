@@ -6,8 +6,8 @@ import { tap } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class LoginService {
 
+export class LoginService {
   constructor(private httpClient: HttpClient) { }
 
   login(name: string, password: string) {
