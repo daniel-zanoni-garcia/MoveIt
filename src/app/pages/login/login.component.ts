@@ -26,7 +26,7 @@ interface LoginForm {
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-  loginForm!: FormGroup<LoginForm>;
+  loginForm: FormGroup<LoginForm>;
   constructor(private router: Router, private loginService: LoginService,
   private toastr: ToastrService) {
     this.loginForm = new FormGroup({
